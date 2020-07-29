@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="main.css" id="themeCss">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!--Title-->
+    <title>Guess a number (:</title>
+
+</head>
+
+<body>
+    
+
+    <div class="Bcontainer bg-dark" id="container">
+
+        <a href="#" id="light-theme"> <i class="far fa-moon fa-3x"  id="light-themei"></i> </a>
+        <a href="#" id="dark-theme"> <i class="fas fa-moon fa-3x"  id="dark-themei"></i> </a>
+
+        <h1 id="header">Guess a number between 1 and 100 !</h1>
+
+        <form>
+            <div class="alert alert-danger" role="alert" id="alert1">
+                Type a number!
+            </div>
+            <input type="number" id="guess" placeholder="Guess!">
+            <button class="btn btn-light" id="submitButton">Submit guess</button>
+            <button class="btn btn-success" id="playAgain">Play again</button>
+        </form>
+
+        <div>Previous Guess: <span id="previousGuess"></span> </div>
+        <div>Guesses Remaining: <span id="guessesRemaining">10</span> </div>
+
+        <div class="alert alert-light" role="alert" id="alert2">
+            
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
