@@ -109,7 +109,7 @@ function guessingProcess(e){
     if(checkEmpty(guess)){
         alert1.style.display="block";
         alert1.textContent="Type a number!";
-
+        e.preventDefault();
         throw new Error("Stopping the function!");
     } else{
         alert1.style.display="none";
@@ -118,7 +118,7 @@ function guessingProcess(e){
     if(checkMagnitude(guess)){
         alert1.style.display="block";
         alert1.textContent="Number is between 1 and 100 !";
-
+        e.preventDefault();
         throw new Error("Stopping the function!");
     } else{
         alert1.style.display="none";
@@ -136,6 +136,7 @@ function guessingProcess(e){
             alert.textContent="You lose AHHAHAHA";
             laugh();
             playAgain();
+            e.preventDefault();
             return;
         }
 
@@ -150,6 +151,7 @@ function guessingProcess(e){
             alert.textContent="You lose AHHAHAHA";
             laugh();
             playAgain();
+            e.preventDefault();
             return;
         }
 
